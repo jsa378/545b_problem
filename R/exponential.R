@@ -1,6 +1,6 @@
 #' Exponentiate numbers
 #'
-#' @title Exponentiates real numbers
+#' @title Exponentiate real numbers
 #'
 #' @description This function computes the exponential of a number,
 #'   vector of numbers, or a (numeric) variable in a tibble.
@@ -18,6 +18,7 @@
 #'
 #' @return The number, vector of numbers or tibble column,
 #'   where each number has been exponentiated.
+#' @export
 #'
 #' @examples
 #' # Exponential of a single number
@@ -58,8 +59,6 @@
 #' tibble_1 <- log_diam_dataset |> select(diameter)
 #' tibble_2 <- log_diam_dataset |> select(exp_log_diam)
 #' all.equal(tibble_1, tibble_2, check.attributes = FALSE)
-#'
-#' @export exponential
 exponential <- function(x, n = 20) {
   # We check that the inputs to the function
   # are appropriate
