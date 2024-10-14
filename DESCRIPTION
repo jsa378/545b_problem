@@ -3,7 +3,7 @@ Title: Exponentiate Numbers
 Version: 0.0.0.9000
 Authors@R: 
     person("Jesse", "Schneider", , "jsa378@student.ubc.ca", role = c("aut", "cre"))
-Description: This function computes the exponential of a number, vector of numbers, or a (numeric) variable in a tibble. This is done recursively, via a truncated approximation of the Taylor-series definition of the exponential function.
+Description: The sole function in this eponymously named package computes the exponential of a number, vector of numbers, or a (numeric) variable in a tibble. This is done recursively, via a truncated approximation of the Taylor-series definition of the exponential function.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
