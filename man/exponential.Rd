@@ -46,7 +46,7 @@ exponential(c(3, NA))
 
 # Exponential of a numerical variable in a tibble
 # (First we load necessary libraries)
-library(tidyverse)
+library(dplyr)
 library(datateachr)
 
 # Take the logarithm of the diameter variable,
