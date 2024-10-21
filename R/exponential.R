@@ -6,6 +6,8 @@
 #'   vector of numbers, or a (numeric) variable in a tibble.
 #'   This is done recursively, via a truncated approximation
 #'   of the Taylor-series definition of the exponential function.
+#'   This function can be used to reverse logarithmic transformations
+#'   of numerical variables, as shown in the last example below.
 #'
 #' @param x The number(s) to exponentiate. This can be a number,
 #'   a vector of numbers, or a (numeric) variable in a tibble.
