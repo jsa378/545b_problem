@@ -69,8 +69,6 @@ exponential <- function(x, n = 20) {
   # is either numeric or NA
   # (anything else will throw an error)
   if (!(is.numeric(x) || any(is.na(x)))) {
-    # stop("`x` must include only numerical and NA values.")
-    # rlang::abort("`x` must include only numerical and NA values.")
     cli::cli_abort("`x` must include only numerical and NA values.")
   }
 
@@ -78,8 +76,6 @@ exponential <- function(x, n = 20) {
   # is a whole number
   # and non-negative
   if (n < 0 || as.integer(n) != n) {
-    # stop("`n` must be a whole number at least zero.")
-    # rlang::abort("`n` must be a whole number at least zero.")
     cli::cli_abort("`n` must be a whole number at least zero.")
   }
 
@@ -87,8 +83,6 @@ exponential <- function(x, n = 20) {
   # that large n values
   # can cause numerical problems
   if (n > 100 && n <= 101) {
-    # warning("`n` is very large; check output carefully for NaN values.")
-    # rlang::warn("`n` is very large; check output carefully for NaN values.")
     cli::cli_warn("`n` is very large; check output carefully for NaN values.")
   }
 
